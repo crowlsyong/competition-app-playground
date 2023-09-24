@@ -1,2 +1,4 @@
 # competition-app-playground
- testing for the competition app
+ testing playground for the competition app
+
+ better docs coming soon
