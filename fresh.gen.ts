@@ -11,12 +11,13 @@ import * as $5 from "./routes/api/joke.ts";
 import * as $6 from "./routes/athlete.tsx";
 import * as $7 from "./routes/greet/[name].tsx";
 import * as $8 from "./routes/index.tsx";
-import * as $9 from "./routes/judge.tsx";
-import * as $10 from "./routes/leaderboard.tsx";
-import * as $11 from "./routes/scan-qr.tsx";
-import * as $12 from "./routes/search.tsx";
-import * as $13 from "./routes/settings.tsx";
-import * as $14 from "./routes/settings2.tsx";
+import * as $9 from "./routes/indexold.tsx";
+import * as $10 from "./routes/judge.tsx";
+import * as $11 from "./routes/leaderboard.tsx";
+import * as $12 from "./routes/scan-qr.tsx";
+import * as $13 from "./routes/search.tsx";
+import * as $14 from "./routes/settings.tsx";
+import * as $15 from "./routes/settings2.tsx";
 import * as $$0 from "./islands/Counter.tsx";
 import * as $$1 from "./islands/SearchName.tsx";
 import * as $$2 from "./islands/Topout.tsx";
@@ -32,12 +33,13 @@ const manifest = {
     "./routes/athlete.tsx": $6,
     "./routes/greet/[name].tsx": $7,
     "./routes/index.tsx": $8,
-    "./routes/judge.tsx": $9,
-    "./routes/leaderboard.tsx": $10,
-    "./routes/scan-qr.tsx": $11,
-    "./routes/search.tsx": $12,
-    "./routes/settings.tsx": $13,
-    "./routes/settings2.tsx": $14,
+    "./routes/indexold.tsx": $9,
+    "./routes/judge.tsx": $10,
+    "./routes/leaderboard.tsx": $11,
+    "./routes/scan-qr.tsx": $12,
+    "./routes/search.tsx": $13,
+    "./routes/settings.tsx": $14,
+    "./routes/settings2.tsx": $15,
   },
   islands: {
     "./islands/Counter.tsx": $$0,
