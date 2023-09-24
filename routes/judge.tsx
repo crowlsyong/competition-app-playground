@@ -1,4 +1,5 @@
 // judge.tsx
+import { Head } from "$fresh/runtime.ts";
 import { useEffect, useState } from "preact/hooks";
 import { useSignal } from "@preact/signals";
 import Footer from "../components/Footer.tsx";
@@ -35,30 +36,35 @@ export default function Judge() {
   };
 
   return (
-    <div class="px-4 py-8 mx-auto bg-[#ede9fe]">
-      <div class="max-w-screen-md mx-auto flex gap-4 flex-col items-left justify-center">
-      <h1 className="text-3xl font-bold mb-2">Judge</h1>
-      <div className="flex justify-between items-center p-4 bg-white border rounded-md">
-      <div className="text-lg font-semibold text-gray-700">
-        John Doe
-      </div>
-      <div className="text-lg font-semibold text-gray-700">
-        2300 pts
-      </div>
-    </div>
-        <JudgeForm
-          onSubmit={handleSubmit}
-          isFormActive={isFormActive}
-          onTopoutYes={handleTopoutYes}
-          onTopoutNo={handleTopoutNo}
-          counterValue={counterValue} // Pass counterValue from local state
-          count={count} // Pass the count as a Signal<number>
-          topout={topout}
-          setIsFormActive={setIsFormActive}
-        />
+    <>
+      <Head>
+      <title>Judge</title>
+      </Head>
+      <div class="px-4 py-8 mx-auto bg-[#ede9fe]">
+        <div class="max-w-screen-md mx-auto flex gap-4 flex-col items-left justify-center">
+          <h1 className="text-3xl font-bold mb-2">Judge</h1>
+          <div className="flex justify-between items-center p-4 bg-white border rounded-md">
+            <div className="text-lg font-semibold text-gray-700">
+              John Doe
+            </div>
+            <div className="text-lg font-semibold text-gray-700">
+              2300 pts
+            </div>
+          </div>
+          <JudgeForm
+            onSubmit={handleSubmit}
+            isFormActive={isFormActive}
+            onTopoutYes={handleTopoutYes}
+            onTopoutNo={handleTopoutNo}
+            counterValue={counterValue} // Pass counterValue from local state
+            count={count} // Pass the count as a Signal<number>
+            topout={topout}
+            setIsFormActive={setIsFormActive}
+          />
 
-        <Footer role={role as "judge" | "athlete" | "admin"} />
+          <Footer role={role as "judge" | "athlete" | "admin"} />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
